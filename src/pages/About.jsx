@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import PageHero from "../components/PageHero";
 import SectionWrapper from "../components/SectionWrapper";
-import tounimg from "../pages/images/img2.png"
+import tounimg from "../pages/images/img2.jpg"
 
 const VALUES = [
   {
