@@ -3,6 +3,7 @@ import { ArrowRight, Play, Clock, Users, BookOpen, Mic } from 'lucide-react'
 import SectionWrapper from '../components/SectionWrapper'
 import SectionHeader from '../components/SectionHeader'
 import useScrollAnimation from '../components/hooks/useScrollAnimation'
+import tounsimg1 from "../assets/IMG_7386.png"
 
 const MINISTRIES = [
   {
@@ -84,7 +85,7 @@ export default function Home() {
             advancing God's purposes through prayer, discipleship, and teaching.
           </p>
           <img
-            src="/src/assets/IMG_7386.JPG"
+            src={tounsimg1}
             alt="Pray with Adetoun - Daily Prayers"
             className="w-full max-w-sm rounded-xl my-4 mx-auto block object-contain h-[450px]"
           />
