@@ -3,21 +3,32 @@
 @tailwind utilities;
 
 @layer base {
-  *, *::before, *::after { box-sizing: border-box; }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     @apply bg-navy text-white font-body;
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4 { @apply font-display; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
 }
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, #F5C45E 0%, #E78B48 50%, #F5C45E 100%);
+    background: linear-gradient(135deg, #f5c45e 0%, #e78b48 50%, #f5c45e 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,27 +58,38 @@
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #102E50; }
-::-webkit-scrollbar-thumb { background: #F5C45E; border-radius: 3px; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #102e50;
+}
+::-webkit-scrollbar-thumb {
+  background: #f5c45e;
+  border-radius: 3px;
+}
 
 /* Nav link underline effect */
 .nav-link {
   position: relative;
 }
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
   width: 0;
   height: 1px;
-  background: #F5C45E;
+  background: #f5c45e;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after,
@@ -75,24 +97,24 @@
   width: 100%;
 }
 
-.hero-background { 
+.hero-background {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: url('/src/assets/IMG_2903.PNG');
+  background-image: url("/src/assets/IMG_2903.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
 
 .hero-background::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(10, 15, 40, 0.70);
+  background-color: rgba(10, 15, 40, 0.7);
   z-index: 0;
 }
 
@@ -118,28 +140,28 @@
   opacity: 0;
   transform: translateY(48px);
   transition: opacity 2.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 2.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 2.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .anim-fade-left {
   opacity: 0;
   transform: translateX(-48px);
   transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .anim-fade-right {
   opacity: 0;
   transform: translateX(48px);
   transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .anim-scale-in {
   opacity: 0;
   transform: scale(0.92);
   transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ── Triggered State ── */
@@ -149,12 +171,24 @@
 }
 
 /* ── Stagger Delays ── */
-.delay-1 { transition-delay: 0.3s; }
-.delay-2 { transition-delay: 0.5s; }
-.delay-3 { transition-delay: 0.7s; }
-.delay-4 { transition-delay: 0.9s; }
-.delay-5 { transition-delay: 1.2s; }
-.delay-6 { transition-delay: 1.4s; }
+.delay-1 {
+  transition-delay: 0.3s;
+}
+.delay-2 {
+  transition-delay: 0.5s;
+}
+.delay-3 {
+  transition-delay: 0.7s;
+}
+.delay-4 {
+  transition-delay: 0.9s;
+}
+.delay-5 {
+  transition-delay: 1.2s;
+}
+.delay-6 {
+  transition-delay: 1.4s;
+}
 
 /* ── Hero entrance ── */
 .hero-background .animate-fade-in > * {
@@ -163,12 +197,24 @@
   animation: heroEntrance 4.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.hero-background .animate-fade-in > *:nth-child(1) { animation-delay: 0.3s; }
-.hero-background .animate-fade-in > *:nth-child(2) { animation-delay: 0.6s; }
-.hero-background .animate-fade-in > *:nth-child(3) { animation-delay: 0.95s; }
-.hero-background .animate-fade-in > *:nth-child(4) { animation-delay: 1.1s; }
-.hero-background .animate-fade-in > *:nth-child(5) { animation-delay: 1.3s; }
-.hero-background .animate-fade-in > *:nth-child(6) { animation-delay: 1.5s; }
+.hero-background .animate-fade-in > *:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.hero-background .animate-fade-in > *:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.hero-background .animate-fade-in > *:nth-child(3) {
+  animation-delay: 0.95s;
+}
+.hero-background .animate-fade-in > *:nth-child(4) {
+  animation-delay: 1.1s;
+}
+.hero-background .animate-fade-in > *:nth-child(5) {
+  animation-delay: 1.3s;
+}
+.hero-background .animate-fade-in > *:nth-child(6) {
+  animation-delay: 1.5s;
+}
 
 @keyframes heroEntrance {
   to {

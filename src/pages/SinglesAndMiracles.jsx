@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Star, Shield, BookOpen } from "lucide-react";
 import PageHero from "../components/PageHero";
 import SectionWrapper from "../components/SectionWrapper";
+import singlesimg from "../assets/singles-miracle.png";
 
 const PILLARS = [
   {
@@ -47,16 +48,16 @@ export default function SinglesAndMiracles() {
             </h2>
             <div className="w-10 h-px bg-gold-DEFAULT my-6" />
             <img
-                src="/src/assets/singles&miracle.jpeg"
-                alt="Pray with Adetoun - Daily Prayers"
-                className="w-full max-w-sm rounded-xl my-4 mx-auto block object-cover"
-              />
+              src={singlesimg}
+              alt="Pray with Adetoun - Daily Prayers"
+              className="w-full max-w-sm rounded-xl my-4 mx-auto block object-cover"
+            />
             <p className="text-white/60 font-body leading-relaxed mb-4">
               Singles & Miracles is a ministry that focuses on encouraging and
               strengthening singles through prayer, teaching, and spiritual
               guidance.
             </p>
-           
+
             <p className="text-white/60 font-body leading-relaxed mb-4">
               The ministry helps singles grow spiritually, trust God's promises
               concerning marriage and destiny, and develop the character and

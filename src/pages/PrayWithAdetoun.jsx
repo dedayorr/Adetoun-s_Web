@@ -9,6 +9,8 @@ import {
 } from "lucide-react";
 import PageHero from "../components/PageHero";
 import SectionWrapper from "../components/SectionWrapper";
+import tounsimg2 from "../assets/dailyprayer.png"
+
 
 const PLATFORMS = [
   {
@@ -101,7 +103,7 @@ export default function PrayWithAdetoun() {
             {/* RIGHT SIDE (IMAGE ONLY) */}
             <div className="flex-1 flex justify-center md:justify-end">
               <img
-                src="/src/assets/dailyprayer.jpeg"
+                src={tounsimg2}
                 alt="Pray with Adetoun - Daily Prayers"
                 className="w-full max-w-sm rounded-xl object-cover"
               />

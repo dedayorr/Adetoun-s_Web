@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Church, Mic, Users, Globe } from "lucide-react";
 import PageHero from "../components/PageHero";
 import SectionWrapper from "../components/SectionWrapper";
+import tounsimg3 from "../assets/IMG_2901.png"
 
 const EVENTS = [
   { icon: Church, label: "Church Gatherings" },
@@ -44,7 +45,7 @@ export default function Speaking() {
         bg="bg-navy-dark"
       />
       <img
-        src="/src/assets/IMG_2901.PNG"
+        src={tounsimg3}
         alt="Pray with Adetoun - Daily Prayers"
         className="w-[90%] max-w-sm rounded-xl mt-4 mx-auto block object-cover"
       />
