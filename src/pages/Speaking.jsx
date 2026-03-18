@@ -44,7 +44,7 @@ export default function Speaking() {
         bg="bg-navy-dark"
       />
       <img
-        src="/dist/assets/IMG_2901.PNG"
+        src="/src/assets/IMG_2901.PNG"
         alt="Pray with Adetoun - Daily Prayers"
         className="w-[90%] max-w-sm rounded-xl mt-4 mx-auto block object-cover"
       />

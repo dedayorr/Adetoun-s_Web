@@ -41,7 +41,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-gold-DEFAULT/10 via-transparent to-rust-DEFAULT/10" />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-10 text-center">
                 <img
-                  src="/dist/assets/IMG_9616.PNG"
+                  src="/src/assets/IMG_9616.PNG"
                   alt="Pray with Adetoun - Daily Prayers"
                   className="w-full max-w-sm rounded-xl my-4 mx-auto block object-cover lg:h-"
                 />

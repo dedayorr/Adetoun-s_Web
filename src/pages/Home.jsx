@@ -84,7 +84,7 @@ export default function Home() {
             advancing God's purposes through prayer, discipleship, and teaching.
           </p>
           <img
-            src="/dist/assets/IMG_7386.JPG"
+            src="/src/assets/IMG_7386.JPG"
             alt="Pray with Adetoun - Daily Prayers"
             className="w-full max-w-sm rounded-xl my-4 mx-auto block object-contain h-[450px]"
           />

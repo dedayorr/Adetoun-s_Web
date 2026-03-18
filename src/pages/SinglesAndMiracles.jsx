@@ -47,7 +47,7 @@ export default function SinglesAndMiracles() {
             </h2>
             <div className="w-10 h-px bg-gold-DEFAULT my-6" />
             <img
-                src="/dist/assets/singles&miracle.jpeg"
+                src="/src/assets/singles&miracle.jpeg"
                 alt="Pray with Adetoun - Daily Prayers"
                 className="w-full max-w-sm rounded-xl my-4 mx-auto block object-cover"
               />

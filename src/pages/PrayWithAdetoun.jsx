@@ -101,7 +101,7 @@ export default function PrayWithAdetoun() {
             {/* RIGHT SIDE (IMAGE ONLY) */}
             <div className="flex-1 flex justify-center md:justify-end">
               <img
-                src="/dist/assets/dailyprayer.jpeg"
+                src="/src/assets/dailyprayer.jpeg"
                 alt="Pray with Adetoun - Daily Prayers"
                 className="w-full max-w-sm rounded-xl object-cover"
               />
