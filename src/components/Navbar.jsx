@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { to: "/ministries", label: "Ministries" },
   // { to: '/podcast', label: 'Podcast' },
   { to: "/books", label: "Books" },
+  { to: "/merch", label: "Merch" },
   { to: "/media", label: "Media" },
   { to: "/blog", label: "Blog" },
   { to: "/contact", label: "Contact" },

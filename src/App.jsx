@@ -13,6 +13,7 @@ import Media from "./pages/Media";
 import Speaking from "./pages/Speaking";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Merch from './pages/Merch'
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -43,6 +44,8 @@ export default function App() {
           <Route path="/speaking" element={<Speaking />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/merch" element={<Merch />} />
+
         </Routes>
       </main>
       <Footer />
