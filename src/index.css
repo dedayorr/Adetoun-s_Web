@@ -120,7 +120,22 @@
 
 .hero-background > * {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
+}
+
+/* Force mobile menu above everything */
+.mobile-menu-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  background-color: #0d1f3c !important;
+  z-index: 99999 !important;
+  isolation: isolate;
+}
+
+/* Break header out of hero stacking context */
+header {
+  position: fixed !important;
+  z-index: 99998 !important;
 }
 
 @media (max-width: 768px) {
