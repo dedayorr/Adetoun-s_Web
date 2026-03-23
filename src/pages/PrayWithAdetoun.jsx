@@ -9,8 +9,7 @@ import {
 } from "lucide-react";
 import PageHero from "../components/PageHero";
 import SectionWrapper from "../components/SectionWrapper";
-import tounsimg2 from "../assets/dailyprayer.png"
-
+import tounsimg2 from "../assets/dailyprayer.png";
 
 const PLATFORMS = [
   {
@@ -22,7 +21,7 @@ const PLATFORMS = [
   {
     icon: Radio,
     label: "Mixlr",
-    href: "https://mixlr.com",
+    href: "https://praywithadetoun.mixlr.com/",
     color: "bg-amber-site",
   },
   {

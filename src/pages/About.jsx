@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import PageHero from "../components/PageHero";
 import SectionWrapper from "../components/SectionWrapper";
-import tounimg from "../pages/images/img2.jpg"
+import tounimg from "../pages/images/img2.jpg";
 
 const VALUES = [
   {
@@ -60,32 +60,42 @@ export default function About() {
           <div className="space-y-6">
             <p className="section-label">Her Story</p>
             <h2 className="font-display text-4xl font-light text-white leading-tight">
-              Called to Herald,{" "}
+              A Voice Stirring Hearts to{" "}
               <span className="italic text-gold-DEFAULT">
-                Trained to Intercede
+                Prayer and Revival
               </span>
             </h2>
             <div className="w-10 h-px bg-gold-DEFAULT" />
             <p className="text-white/60 font-body leading-relaxed">
-              Esther Adetoun Adeyeye is an author, prayer leader, and minister
-              with a deep passion for prayer, revival, and spiritual
-              transformation.
+              Esther Adetoun Adeyeye is a minister, author, and prayer leader
+              devoted to advancing God’s purposes through prayer, discipleship,
+              and the ministry of the Spirit, raising a generation grounded in
+              truth and set ablaze by the Holy Spirit.
             </p>
             <p className="text-white/60 font-body leading-relaxed">
-              Her calling centers on raising intercessors, strengthening
-              believers in their walk with God, and heralding revival through
-              prayer and the ministry of the Word.
+              Her life and calling are centered on igniting intercession,
+              strengthening believers in their walk with God, and heralding
+              revival through prayer, discipleship, and the ministry of the Holy
+              Spirit.
             </p>
             <p className="text-white/60 font-body leading-relaxed">
-              Through teaching, writing, and prayer gatherings, she encourages
+              Through teaching, writing, and prayer gatherings, she equips
               believers to cultivate intimacy with God and walk boldly in their
-              purpose. Her ministry has touched lives across the globe — from
-              local prayer rooms to international broadcast platforms.
+              God-given purpose. Her ministry expressions have impacted lives
+              across the globe.
             </p>
             <p className="text-white/60 font-body leading-relaxed">
-              Esther leads the daily prayer watch, Pray With Adetoun, which runs
-              every night from 12:00 AM to 2:00 AM CST, gathering intercessors
-              from around the world in unified prayer.
+              Esther is the convener of Pray With Adetoun, a global prayer
+              movement with expressions including the Daily Prayer Watch (12:00
+              AM – 2:00 AM CST), the Audio Podcast Prayers, and the monthly
+              6-hour Deep Waters prayer gathering. She is also the convener of
+              Singles & Miracles and the Voice of One Podcast, reaching diverse
+              audiences with messages of faith, alignment, and transformation.
+            </p>
+            <p className="text-white/60 font-body leading-relaxed">
+              She currently serves as a Minister and Prayer Leader at KingsWord
+              International Church under the apostolic oversight of Dr. Kay and
+              Pastor May Ijisesan.
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
               <Link to="/pray-with-adetoun" className="btn-primary">

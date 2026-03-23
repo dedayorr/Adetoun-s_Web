@@ -78,7 +78,7 @@ export default function Speaking() {
           </div>
 
           {/* Topics */}
-          <div>
+          {/* <div>
             <p className="section-label mb-6">Speaking Topics</p>
             <h2 className="font-display text-3xl font-light text-white mb-2">
               Messages That{" "}
@@ -102,7 +102,7 @@ export default function Speaking() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </SectionWrapper>
 

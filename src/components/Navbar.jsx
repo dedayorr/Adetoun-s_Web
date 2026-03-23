@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/ministries", label: "Ministries" },
+  { to: "/ministries", label: "Ministry Expressions" },
   // { to: '/podcast', label: 'Podcast' },
   { to: "/books", label: "Books" },
   { to: "/merch", label: "Merch" },
