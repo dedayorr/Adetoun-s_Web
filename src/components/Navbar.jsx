@@ -80,10 +80,10 @@ export default function Navbar() {
       </div>
 
       <div
-  className={`lg:hidden fixed inset-0 bg-navy-dark opacity-100 z-[999] transition-transform duration-500 
+        className={`lg:hidden fixed inset-0 bg-navy-dark opacity-100 z-[999] transition-transform duration-500 
   ${menuOpen ? "translate-x-0" : "translate-x-full"}
 `}
->
+      >
         <div className="flex flex-col h-full px-8 pt-24 pb-12">
           <button
             onClick={() => setMenuOpen(false)}
