@@ -10,12 +10,12 @@ const MINISTRIES = [
     title: 'Pray With Adetoun',
     desc: [
       'Pray With Adetoun (PWA) is a global prayer movement committed to raising disciplined intercessors who press into God\'s presence consistently and fervently.',
-      'The daily prayer watch runs from 12:00 AM to 2:00 AM CST, 6:00 AM to 8:00 AM WAT, gathering believers from around the world in unified intercession.',
+      'The daily prayer watch runs from 🇺🇸 CST: 12:00 AM – 2:00 AM, 🇳🇬 WAT: 6:00 AM – 8:00 AM, 🇬🇧 GMT: 5:00 AM – 7:00 AM gathering believers from around the world in unified intercession.',
       'Once a month, PWA also hosts Deep Waters Prayer — a six-hour extended prayer gathering dedicated to deeper spiritual seeking, renewal, and alignment with God\'s purposes.',
     ],
     to: '/pray-with-adetoun',
     accent: 'from-rust-DEFAULT to-amber-site',
-    badge: 'Daily 12AM–2AM CST, 6AM-8AM WAT',
+    badge: 'Daily 12AM–2AM CST, 6AM-8AM WAT, 5AM-7AM GMT',
   }, 
   {
     icon: Users,

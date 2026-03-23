@@ -282,8 +282,8 @@ export default function Merch() {
 
       <PageHero
         label="Merch & Products"
-        title="Shop with style"
-        subtitle="Curated products from Heart and Word by Adetoun. Every purchase supports the ministry."
+        title="Wear The Word"
+        subtitle="Then Curated expressions of faith from Heart & Word by Adetoun."
         bg="bg-navy-dark"
       />
 

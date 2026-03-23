@@ -46,12 +46,12 @@ const HOW_STEPS = [
   {
     step: "03",
     title: "Pray Together",
-    desc: "Come with an open heart. Intercede, worship, and press in alongside believers across the globe.",
+    desc: "Come with an open heart to pray, worship, intercede, and press in alongside believers across the globe.",
   },
   {
     step: "04",
     title: "Deep Waters Monthly",
-    desc: "Join the extended six-hour prayer gathering once a month for deeper seeking and renewal.",
+    desc: "Join the extended six-hour prayer gathering once a month for an encounter with God",
   },
 ];
 
@@ -78,10 +78,9 @@ export default function PrayWithAdetoun() {
                 Daily Prayer Watch
               </p>
               <p className="font-display text-3xl text-navy-DEFAULT font-light">
-                12:00 am – 2:00 am CST <br />
-                6:00 am – 8:00 am WAT <br />
-                1:00 am – 3:00 am EST <br />
-                5:00 am -7:00 am GMT
+                🇺🇸 CST: 12:00 AM – 2:00 AM <br />
+                🇳🇬 WAT: 6:00 AM – 8:00 AM <br />
+                🇬🇧 GMT: 5:00 AM – 7:00 AM
               </p>
 
               {/* Platforms */}
@@ -225,10 +224,10 @@ export default function PrayWithAdetoun() {
             The Watch Awaits You
           </h2>
           <div className="divider-gold" />
-          <p className="text-white/60 font-body mb-10">
+          {/* <p className="text-white/60 font-body mb-10">
             Intercessors show up every night/morning. Tonight could be your
             first night.
-          </p>
+          </p> */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             {PLATFORMS.map(({ icon: Icon, label, href, color }) => (
               <a

@@ -1,36 +1,58 @@
-import { useState } from 'react'
-import { ArrowRight, Youtube, CheckCircle } from 'lucide-react'
-import PageHero from '../components/PageHero'
-import SectionWrapper from '../components/SectionWrapper'
-import { FaFacebook, FaInstagram } from 'react-icons/fa'
+import { useState } from "react";
+import { ArrowRight, Youtube, CheckCircle } from "lucide-react";
+import PageHero from "../components/PageHero";
+import SectionWrapper from "../components/SectionWrapper";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const SOCIALS = [
-  { icon: Youtube, label: 'YouTube', handle: '@EstherAdeyeye', href: 'https://youtube.com/@estheradetounadeyeye?si=i2nZOPQdkMcsIELx', color: 'bg-rust-DEFAULT' },
-  { icon: FaInstagram, label: 'Instagram', handle: '@adeyeye_adetoun', href: 'https://www.instagram.com/adeyeye_adetoun?igsh=MXdyeTF2M3oxbzNxcA%3D%3D&utm_source=qr', },
+  {
+    icon: Youtube,
+    label: "YouTube",
+    handle: "@estheradetounadeyeye",
+    href: "https://youtube.com/@estheradetounadeyeye?si=i2nZOPQdkMcsIELx",
+    color: "bg-rust-DEFAULT",
+  },
+  {
+    icon: FaInstagram,
+    label: "Instagram",
+    handle: "@adeyeye_adetoun",
+    href: "https://www.instagram.com/adeyeye_adetoun?igsh=MXdyeTF2M3oxbzNxcA%3D%3D&utm_source=qr",
+  },
   // { icon: Radio, label: 'Mixlr', handle: 'Pray With Adetoun', href: 'https://mixlr.com', color: 'bg-amber-site' },
-  { icon: FaFacebook, label: 'Facebook', handle: 'Esther Adetoun Adeyeye', href: 'https://www.facebook.com/estheradetounadeyeye',  },
-]
+  {
+    icon: FaFacebook,
+    label: "Facebook",
+    handle: "Esther Adetoun Adeyeye",
+    href: "https://www.facebook.com/estheradetounadeyeye",
+  },
+];
 
 const INQUIRY_TYPES = [
-  'General Inquiry',
-  'Speaking Invitation',
-  'Ministry Collaboration',
-  'Books & Resources',
-  'Prayer Request',
-  'Other',
-]
+  "General Inquiry",
+  "Speaking Invitation",
+  "Ministry Collaboration",
+  "Books & Resources",
+  "Prayer Request",
+  "Other",
+];
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', type: '', message: '' })
-  const [submitted, setSubmitted] = useState(false)
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    type: "",
+    message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = e => setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  const handleChange = (e) =>
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = e => {
-    e.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault();
     // TODO: wire to your form backend (Formspree, EmailJS, Netlify Forms, etc.)
-    setSubmitted(true)
-  }
+    setSubmitted(true);
+  };
 
   return (
     <>
@@ -43,18 +65,23 @@ export default function Contact() {
 
       <SectionWrapper className="bg-navy">
         <div className="grid md:grid-cols-[2fr_1fr] gap-16 items-start">
-
           {/* FORM */}
           <div>
             <p className="section-label mb-6">Send a Message</p>
 
             {submitted ? (
               <div className="border border-gold-DEFAULT/30 bg-navy-dark p-10 text-center">
-                <CheckCircle size={40} className="text-gold-DEFAULT mx-auto mb-4" />
-                <h3 className="font-display text-3xl text-white mb-2">Message Received</h3>
+                <CheckCircle
+                  size={40}
+                  className="text-gold-DEFAULT mx-auto mb-4"
+                />
+                <h3 className="font-display text-3xl text-white mb-2">
+                  Message Received
+                </h3>
                 <div className="w-8 h-px bg-gold-DEFAULT mx-auto my-4" />
                 <p className="text-white/60 font-body">
-                  Thank you for reaching out. We'll get back to you as soon as possible.
+                  Thank you for reaching out. We'll get back to you as soon as
+                  possible.
                 </p>
               </div>
             ) : (
@@ -101,8 +128,10 @@ export default function Contact() {
                     className="w-full bg-navy-dark border border-white/10 focus:border-gold-DEFAULT/60 text-white font-body text-sm px-5 py-3.5 outline-none transition-colors appearance-none"
                   >
                     <option value="">Select an option</option>
-                    {INQUIRY_TYPES.map(t => (
-                      <option key={t} value={t}>{t}</option>
+                    {INQUIRY_TYPES.map((t) => (
+                      <option key={t} value={t}>
+                        {t}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -149,12 +178,18 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 border border-white/10 hover:border-gold-DEFAULT/30 p-4 group transition-all duration-300"
                   >
-                    <div className={`w-10 h-10 ${color} flex items-center justify-center shrink-0`}>
+                    <div
+                      className={`w-10 h-10 ${color} flex items-center justify-center shrink-0`}
+                    >
                       <Icon size={16} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-body text-white text-sm group-hover:text-gold-DEFAULT transition-colors">{label}</p>
-                      <p className="font-body text-white/40 text-xs">{handle}</p>
+                      <p className="font-body text-white text-sm group-hover:text-gold-DEFAULT transition-colors">
+                        {label}
+                      </p>
+                      <p className="font-body text-white/40 text-xs">
+                        {handle}
+                      </p>
                     </div>
                   </a>
                 ))}
@@ -164,10 +199,14 @@ export default function Contact() {
             <div className="border border-gold-DEFAULT/20 p-6 bg-navy-dark relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-rust-DEFAULT via-amber-site to-gold-DEFAULT" />
               <p className="section-label mb-3">Prayer Watch</p>
-              <p className="font-display text-2xl text-white font-light mb-2">12:00 AM – 2:00 AM CST, 6:00 AM - 8:00 AM WAT</p>
+              <p className="font-display text-2xl text-white font-light mb-2">
+  🇺🇸 CST: 12:00 AM – 2:00 AM <br />
+  🇳🇬 WAT: 6:00 AM – 8:00 AM <br />
+  🇬🇧 GMT: 5:00 AM – 7:00 AM
+</p>
               <div className="w-6 h-px bg-gold-DEFAULT mb-3" />
               <p className="text-white/50 text-sm font-body mb-4">
-                Join nightly on Telegram, Mixlr, or YouTube.
+                Join daily on Telegram, Mixlr, or YouTube.
               </p>
               <a
                 href="https://t.me/praywithadetoun"
@@ -182,5 +221,5 @@ export default function Contact() {
         </div>
       </SectionWrapper>
     </>
-  )
+  );
 }
