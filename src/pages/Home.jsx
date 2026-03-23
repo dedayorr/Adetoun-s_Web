@@ -66,7 +66,7 @@ export default function Home() {
               Join Prayer <ArrowRight size={16} />
             </Link>
             <Link to="/ministries" className="btn-outline">
-              Explore Ministries
+              Explore Ministry Expressions
             </Link>
           </div>
         </div>
