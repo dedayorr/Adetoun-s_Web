@@ -41,7 +41,7 @@ const HOW_STEPS = [
   {
     step: "02",
     title: "Show Up at 12 AM CST",
-    desc: "Set your alarm. The watch begins at midnight and runs until 2:00 AM CST, 6:00 AM WAT, every night.",
+    desc: "Set your alarm. The watch begins at midnight and runs until 2:00 AM CST. 6:00 AM WAT, every night. Kindly convert to your time zone",
   },
   {
     step: "03",
@@ -80,7 +80,8 @@ export default function PrayWithAdetoun() {
               <p className="font-display text-3xl text-navy-DEFAULT font-light">
                 12:00 am – 2:00 am CST <br />
                 6:00 am – 8:00 am WAT <br />
-                1:00 am – 3:00 am EST
+                1:00 am – 3:00 am EST <br />
+                5:00 am -7:00 am GMT
               </p>
 
               {/* Platforms */}
@@ -115,27 +116,34 @@ export default function PrayWithAdetoun() {
       <SectionWrapper className="bg-navy">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="section-label mb-4">About PWA</p>
+            <p className="section-label mb-4">About Pray With Adetoun (PWA)</p>
             <h2 className="font-display text-4xl font-light text-white leading-tight mb-2">
-              A Movement Built on{" "}
+              A Movement of{" "}
               <span className="italic text-gold-DEFAULT">
-                Consistent Intercession
+                Consistent Prayer & Intercession
               </span>
             </h2>
             <div className="w-10 h-px bg-gold-DEFAULT my-6" />
             <p className="text-white/60 font-body leading-relaxed mb-4">
               Pray With Adetoun (PWA) is a global prayer movement committed to
-              raising disciplined intercessors — believers who show up
-              faithfully, night after night, to press into God's presence.
+              strengthening believers to live a life of consistent, fervent
+              prayer, and intercession.
             </p>
             <p className="text-white/60 font-body leading-relaxed mb-4">
-              The daily prayer watch runs from 12:00 AM to 2:00 AM CST. Whether
-              you're in Lagos, London, or Los Angeles, you can join this global
-              company of intercessors through Telegram, Mixlr, or YouTube.
+              At the heart of PWA is the Daily Prayer Watch, held from 12:00 AM
+              to 2:00 AM CST, a sacred altar where believers across nations
+              gather in unity to seek God. Whether in Lagos, London, or Los
+              Angeles, this global company joins through Telegram, Mixlr, and
+              YouTube to press into His presence.
+            </p>
+            <p className="text-white/60 font-body leading-relaxed mb-4">
+              Pray With Adetoun is more than a meeting. It is a movement. A
+              people being shaped in the place of prayer, growing in spiritual
+              discipline, and aligning with the purposes of God.
             </p>
             <p className="text-white/60 font-body leading-relaxed">
-              Prayer is not a programme — it is a lifestyle. PWA exists to help
-              believers build that lifestyle.
+              Prayer is not a programme, it is a lifestyle and PWA exists to
+              help believers build and sustain that lifestyle.
             </p>
           </div>
 
@@ -145,7 +153,9 @@ export default function PrayWithAdetoun() {
             <div className="absolute inset-0 bg-texture opacity-10" />
             <div className="relative z-10">
               <Droplets size={32} className="text-gold-DEFAULT mb-6" />
-              <p className="section-label mb-2">Monthly Gathering</p>
+              <p className="section-label mb-2">
+                Make it Deep Waters 6-hour Prayer
+              </p>
               <h3 className="font-display text-3xl font-light text-white mb-4">
                 Deep Waters Prayer
               </h3>
@@ -155,9 +165,10 @@ export default function PrayWithAdetoun() {
                 extended six-hour prayer session.
               </p>
               <p className="text-white/60 font-body leading-relaxed mb-6">
-                Deep Waters is a time of deeper spiritual seeking, renewal, and
-                alignment with God's purposes — going beyond the daily watch
-                into extended intercession and worship.
+                Deep Waters is a time of deep spiritual travail, divine
+                impartation of the Holy Spirit, and alignment with God’s
+                purposes. It goes beyond the daily watch into extended prayers,
+                worship, intercession, and encounters that transform lives.
               </p>
               <div className="flex gap-2 flex-wrap">
                 {PLATFORMS.map(({ icon: Icon, label, href, color }) => (
