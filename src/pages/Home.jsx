@@ -9,7 +9,7 @@ const MINISTRIES = [
   {
     icon: Clock,
     title: "Pray With Adetoun",
-    desc: "A global prayer movement with a daily prayer watch from 12:00 AM – 2:00 AM CST. Join thousands of intercessors worldwide.",
+    desc: "A global prayer movement with a daily prayer watch from 12:00 AM – 2:00 AM CST.",
     to: "/pray-with-adetoun",
     accent: "bg-rust-DEFAULT",
   },
@@ -22,7 +22,7 @@ const MINISTRIES = [
   },
   {
     icon: Mic,
-    title: "The Voice of One",
+    title: "The Voice of One Podcast",
     desc: "Teachings centered on prayer, revival, and spiritual growth — available on Spotify, Apple Podcasts, and YouTube.",
     to: "/podcast",
     accent: "bg-gold-DEFAULT",
@@ -56,11 +56,11 @@ export default function Home() {
             Through Prayer, The Word & The Power of The Holy Spirit.
           </h2>
           <div className="divider-gold" />
-          <p className="text-white/60 text-lg md:text-xl font-body font-light leading-relaxed max-w-2xl mx-auto mb-10">
+          {/* <p className="text-white/60 text-lg md:text-xl font-body font-light leading-relaxed max-w-2xl mx-auto mb-10">
             Esther Adetoun Adeyeye is an author, prayer leader, and revival
             voice committed to igniting intercessors, strengthening believers,
             and setting generations aflame with the fire of the Holy Spirit.
-          </p>
+          </p> */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/pray-with-adetoun" className="btn-primary">
               Join Prayer <ArrowRight size={16} />
@@ -110,8 +110,8 @@ export default function Home() {
                     "
                   </div>
                   <p className="font-display text-2xl lg:text-[40px] text-white/80 italic leading-relaxed">
-                    Igniting intercessors. Heralding revival. Setting generations
-                    aflame.
+                    Igniting intercession. Heralding revival. Setting
+                    generations aflame.
                   </p>
                 </div>
               </div>
@@ -168,12 +168,11 @@ export default function Home() {
             12:00 AM – 2:00 AM CST
           </h2>
           <p className="text-navy-DEFAULT/70 font-body mb-8">
-            Join globally through Telegram, Mixlr, and YouTube. Every night.
-            Without fail.
+            Join globally through Telegram, Mixlr, and YouTube.
           </p>
           <Link
             to="/pray-with-adetoun"
-            className="inline-flex items-center gap-2 bg-navy-DEFAULT text-gold-DEFAULT font-body text-sm tracking-widest uppercase px-8 py-4 hover:bg-navy-dark transition-colors"
+            className="text-xl text-[#F5C45E] inline-flex items-center gap-2 bg-navy-DEFAULT text-gold-DEFAULT font-body tracking-widest uppercase px-8 py-4 hover:bg-navy-dark transition-colors"
           >
             Join the Watch <ArrowRight size={16} />
           </Link>

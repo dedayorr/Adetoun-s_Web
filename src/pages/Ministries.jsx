@@ -19,7 +19,7 @@ const MINISTRIES = [
   }, 
   {
     icon: Users,
-    label: 'Encouragement & Guidance',
+    // label: 'Encouragement & Guidance',
     title: 'Singles & Miracles',
     desc: [
       'Singles & Miracles is a ministry devoted to encouraging and strengthening singles through prayer, teaching, and spiritual guidance.',

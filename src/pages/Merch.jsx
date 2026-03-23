@@ -283,7 +283,7 @@ export default function Merch() {
       <PageHero
         label="Merch & Products"
         title="Wear The Word"
-        subtitle="Then Curated expressions of faith from Heart & Word by Adetoun."
+        subtitle="Curated expressions of faith from Heart & Word by Adetoun."
         bg="bg-navy-dark"
       />
 

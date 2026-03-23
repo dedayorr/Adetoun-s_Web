@@ -41,7 +41,7 @@ const HOW_STEPS = [
   {
     step: "02",
     title: "Show Up at 12 AM CST",
-    desc: "Set your alarm. The watch begins at midnight and runs until 2:00 AM CST. 6:00 AM WAT, every night. Kindly convert to your time zone",
+    desc: "Set your alarm. The watch begins at midnight and runs until 2:00 AM CST. 6:00 AM WAT, daily. Kindly convert to your time zone",
   },
   {
     step: "03",
@@ -51,7 +51,7 @@ const HOW_STEPS = [
   {
     step: "04",
     title: "Deep Waters Monthly",
-    desc: "Join the extended six-hour prayer gathering once a month for an encounter with God",
+    desc: "Join the extended six-hour prayer gathering once a month for an encounter with God.",
   },
 ];
 

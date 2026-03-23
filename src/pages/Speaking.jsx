@@ -41,7 +41,7 @@ export default function Speaking() {
       <PageHero
         label="Speaking & Ministry"
         title="Invite Esther to Minister"
-        subtitle="Available to bring a word of fire, prayer, and truth to your gathering — locally and internationally."
+        subtitle="Available to bring a word of fire, prayer, and truth to your gathering."
         bg="bg-navy-dark"
       />
       <img

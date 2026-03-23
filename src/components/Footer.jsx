@@ -4,7 +4,7 @@ import { Youtube, Send, Radio, Mic2 } from "lucide-react";
 const LINKS = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Esther" },
-  { to: "/ministries", label: "Ministries" },
+  { to: "/ministries", label: "Explore Ministry Expressions" },
   { to: "/pray-with-adetoun", label: "Pray With Adetoun" },
   { to: "/singles-and-miracles", label: "Singles & Miracles" },
   { to: "/podcast", label: "The Voice of One Podcast" },
