@@ -17,6 +17,7 @@ const BOOKS = [
     topics: ["Declarations", "Prayer", "Faith"],
     cta: "Get on Amazon",
     href: "https://a.co/d/03snjcv7",
+    ebook: "https://stan.store/speaklifeebook/p/get-speak-life-ebook-now",
     cover: speakLifeCover,
   },
   {
@@ -54,7 +55,7 @@ export default function Books() {
       <SectionWrapper className="bg-navy">
         <div className="grid md:grid-cols-3 gap-8">
           {BOOKS.map(
-            ({ title, type, price, desc, topics, cta, href, cover }) => (
+            ({ title, type, price, desc, topics, cta, href, ebook, cover }) => (
               <div
                 key={title}
                 className="group border border-white/10 hover:border-gold-DEFAULT/40 flex flex-col overflow-hidden transition-all duration-500 card-hover"
@@ -98,14 +99,26 @@ export default function Books() {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-auto inline-flex items-center gap-2 text-gold-DEFAULT font-body text-sm tracking-widest uppercase hover:gap-4 transition-all duration-300 group-hover:text-gold-light"
-                  >
-                    {cta} <ExternalLink size={13} />
-                  </a>
+                  <div className="mt-auto flex flex-col gap-3">
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-gold-DEFAULT font-body text-sm tracking-widest uppercase hover:gap-4 transition-all duration-300 group-hover:text-gold-light"
+                    >
+                      {cta} <ExternalLink size={13} />
+                    </a>
+                    {ebook && (
+                      <a
+                        href={ebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-white/50 font-body text-sm tracking-widest uppercase hover:text-white/80 hover:gap-4 transition-all duration-300"
+                      >
+                        Get eBook <ExternalLink size={13} />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             )
