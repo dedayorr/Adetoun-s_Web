@@ -14,6 +14,7 @@ import Speaking from "./pages/Speaking";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Merch from './pages/Merch'
+import Partnership from "./pages/Partnership";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -45,7 +46,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/merch" element={<Merch />} />
-
+          <Route path="/partnership" element={<Partnership />} />
         </Routes>
       </main>
       <Footer />

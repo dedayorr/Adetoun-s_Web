@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { to: "/merch", label: "Merch" },
   { to: "/media", label: "Media" },
   { to: "/blog", label: "Blog" },
+  { to: "/partnership", label: "Partnership" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -96,7 +97,7 @@ export default function Navbar() {
             >
               <X size={28} />
             </button>
-            <nav className="flex flex-col gap-8">
+            <nav className="flex flex-col gap-5">
               {NAV_LINKS.map(({ to, label }) => (
                 <NavLink
                   key={to}
